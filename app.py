@@ -17,5 +17,12 @@ def tickets():
         {"id": 2, "titulo": "Erro de acesso ao sistema"}
     ]
 
+@app.route("/sobre")
+def sobre():
+    return {
+        "nome": "OpsTrack API",
+        "versao": "1.0"
+    }
+
 if __name__ == "__main__":
     app.run(debug=True)
